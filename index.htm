@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Country</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div id="qlobe">
+                    <a href="#">
+                        <i id="earth" class="fa-solid fa-earth-asia"></i>
+                    </a>
+                </div>
+                <div id="light">
+                    <i onclick="light()" id="sun"  class="fa-solid fa-moon"></i>
+                    <i onclick="light()" id='moon'  class="fa-solid fa-sun"></i>
+                </div>
+                <div id="bars">
+                    <i id="bar" onclick="menu()" class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <div id='slidermenu'>
+                <ul id="menu">
+                    <div id="birincidiv">
+                        <li><a id="europe" onclick="showEurope(event)" href="#">Europe</a></li>
+                        <li><a id="asia" onclick="showAsia(event)" href="#">Asia</a></li>
+                        <li><a id="americas" onclick="showAmericas(event)" href="#">Americas</a></li>
+                    </div>
+                    <div id="ikincidiv">
+                        <li><a id="africa" onclick="showAfrica(event)" href="#">Africa</a></li>
+                        <li><a id="oceania" onclick="showOceania(event)" href="#">Oceania</a></li>
+                        <li><a id="antarctic" onclick="showAntarctic(event)" href="#">Antarctic</a></li>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div id="mainTop">
+                <h1>Welcome to CountryApp Website</h1>
+                <h2>You can find data of any country in this website.</h2>
+                <button class="btn btn1">Have a look</button>
+                <button class="btn btn2">Search</button>
+            </div>
+            <div id="bigcard">
+            
+                    <!-- <div id="bigcardimg">
+                        <img src="${img[i]}" alt="img" />
+                    </div>
+                    
+                    
+                    <div id="metn">
+                        <h3>${name[i]}</h3>
+                        <p>${region[i]}</p>
+                        <p>Area: ${area[i]}km<sup>2</sup></p>
+                        <p>Popliation:${popilation[i]}</p>                   
+                    </div> -->
+                
+            </div>
+            <div id="container" class="container">
+            
+            </div>
+            <div>
+                <button id="btn" onclick="showMore()" class="btn btn3">Show More...</button>
+            </div>
+        </main>
+        <footer>
+            <div id="copyright">
+                <div id="git"><i class="fa-brands fa-git-alt"></i></div>
+                <div><a  class="footertext" href="https://github.com/aybeniz-24">by aybeniz</a></div>
+                <div><a  class="footertext" href="#">Privacy © 2024</a></div>
+            </div>
+            <div id="icon">
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-facebook"></i></div>
+            </div>
+        </footer>
+
+        <script src="js/app.js"></script>
+        
+    </body>
+
+</html>

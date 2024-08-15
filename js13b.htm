@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #oyun {
+            width: 800px;
+            height: 600px;
+            box-shadow: 0 0 10px #333;
+            margin: 10vh auto;
+            position: relative;
+        }
+        #oyun > * {
+            position: absolute;
+        }
+        #ball {
+            width: 30px;
+            height: 30px;
+            background: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="oyun">
+        <div id="ball"></div>
+    </div>
+
+    <script>
+        const ball = document.querySelector("#ball");
+        let y = 0;
+        let x = 0;
+        let speedY = 5;
+        let speedX = 5;
+        const maxY = 570;  
+        const maxX = 770;
+
+        setInterval(move, 40);
+
+        function move() {
+            y += speedY;
+            x += speedX;
+
+
+            if (y >= maxY || y <= 0) {
+                speedY = -speedY;
+            }
+            
+            if (x >= maxX || x <= 0) {
+                speedX = -speedX;
+            }
+
+            ball.style.top = y + "px";
+            ball.style.left = x + "px";
+        }
+    </script>
+</body>
+</html>
